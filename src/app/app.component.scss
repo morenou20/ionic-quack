@@ -1,0 +1,23 @@
+.custom-toolbar {
+  --box-shadow: none;
+  --border-color: transparent;
+  justify-content: center;
+  text-align: center;
+  max-height: 50px;
+}
+
+ion-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin: 0 auto;
+}

@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "https://random-d.uk",
+    "changeOrigin": true,
+    "secure": false
+  }
+}

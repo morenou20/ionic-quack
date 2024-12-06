@@ -1,0 +1,15 @@
+{
+  "name": "ionic-quack",
+  "integrations": {
+    "capacitor": {}
+  },
+
+  "proxies": [
+    {
+      "path": "/duck",
+      "proxyUrl": "https://random-d.uk/api/v2/quack"
+    }
+  ],
+
+  "type": "angular"
+}

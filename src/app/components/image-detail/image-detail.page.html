@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="center-content">
+    <ion-card>
+      <ion-img [src]="imageUrl" class="quack-image"></ion-img>
+
+      <!--p>URL: <a [href]="imageUrl" target="_blank">Abrir en API</a></p-->
+    </ion-card>
+
+    <ion-button expand="block" [href]="imageUrl" target="_blank">
+      <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+      Continuar al enlace</ion-button
+    >
+
+    <ion-button expand="block" routerLink="/list">
+      <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+      Volver</ion-button
+    >
+  </div>
+</ion-content>

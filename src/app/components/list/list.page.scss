@@ -1,0 +1,41 @@
+.image-list-scroll {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+/* Estilo imagenes */
+.duck-image,
+.duck-gif,
+.duck-http {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+ion-card {
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ion-content {
+  --background: #f8f8f8;
+  padding: 10px;
+}
+
+ion-item {
+  padding: 0;
+}

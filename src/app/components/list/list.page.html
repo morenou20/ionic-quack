@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Patos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
+  <!-- Carta para las imágenes -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Imágenes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="image-list-scroll">
+        <div class="image-grid">
+          <div *ngFor="let image of images">
+            <ion-item button (click)="onQuackClick(image)">
+              <img [src]="image" alt="Duck Image" class="duck-image" />
+            </ion-item>
+          </div>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Carta para los GIFs -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>GIFs</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="image-list-scroll">
+        <div class="image-grid">
+          <div *ngFor="let gif of gifs">
+            <ion-item button (click)="onQuackClick(gif)">
+              <img [src]="gif" alt="Duck Gif" class="duck-gif" />
+            </ion-item>
+          </div>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Carta para los Códigos HTTP -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Códigos HTTP</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="image-list-scroll">
+        <div class="image-grid">
+          <div *ngFor="let httpImage of http">
+            <ion-item button (click)="onQuackClick(httpImage)">
+              <img [src]="httpImage" alt="HTTP Duck" class="duck-http" />
+            </ion-item>
+          </div>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Indicador de carga -->
+  <div *ngIf="loading" class="loading">
+    <ion-spinner name="crescent"></ion-spinner>
+    <p>Cargando...</p>
+  </div>
+</ion-content>

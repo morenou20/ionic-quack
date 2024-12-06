@@ -1,0 +1,46 @@
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #ffffff;
+}
+
+ion-card {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
+.quack-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.button-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain; /* Asegura que la imagen no se distorsione */
+  margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+ion-button {
+  --color: #090909;
+  --padding: 0.7em 1.7em;
+  --font-size: 18px;
+  --border-radius: 0.5em;
+  --background: #e8e8e8;
+  --cursor: pointer;
+  --border: 1px solid #e8e8e8;
+  --transition: all 0.3s;
+  --box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+ion-button:active {
+  --color: #666;
+  --box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
