@@ -5,7 +5,7 @@
 	•	Navegación: Menú integrado para moverse entre las diferentes pantallas.
 	•	Ionic Framework Angular: Diseño responsivo y atractivo
 	•	Principios SOLID: Arquitectura escalable y mantenible
-
+	•	Link descargar archivo zip: https://drive.google.com/file/d/1tYGACvenJloHNPOtOnZ83V2sfv4el8GM/view?usp=drive_link
 
 # Arquitectura
     •   arquitectura modular y separacion de responsabilidades
